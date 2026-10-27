@@ -154,8 +154,8 @@ MLOps Student Project/
 
 ### 1. Clone or Open the Repository
 ```bash
-git clone <repository_url>
-cd "MLOps Student Project"
+git clone https://github.com/ShivPardeshi/Student-Performance-Prediction-MLOps.git
+cd Student-Performance-Prediction-MLOps
 ```
 
 ### 2. Set Up a Virtual Environment

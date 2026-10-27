@@ -120,7 +120,7 @@ The monitoring pipeline accurately identified the three features that underwent 
 
 ## 5. GitHub Repository and Reproducibility
 
-- **GitHub Repository URL:** Prepared locally (Remote URL pending publication upon instructor review).
+- **GitHub Repository URL:** https://github.com/ShivPardeshi/Student-Performance-Prediction-MLOps.git
 - **Source Code & Notebook:**
   - Configuration: `src/config.py`
   - Data Loader: `src/data_loader.py`
