@@ -1,0 +1,106 @@
+{
+    "project_title": "Student Performance Prediction and Data Drift Detection",
+    "dataset": {
+        "name": "UCI Student Performance (Mathematics)",
+        "source": "https://archive.ics.uci.edu/dataset/320/student+performance",
+        "file": "student-mat.csv",
+        "total_records": 395,
+        "total_columns": 33,
+        "input_features_count": 30
+    },
+    "model_training": {
+        "experiment_name": "Student_Performance_Prediction",
+        "selected_model": "Tuned_Model_Run2",
+        "metrics": {
+            "mae": 2.9819,
+            "rmse": 3.757,
+            "r2": 0.3116
+        },
+        "comparison": {
+            "Run1_Baseline": {
+                "parameters": {
+                    "n_estimators": 100,
+                    "max_depth": 8,
+                    "random_state": 42
+                },
+                "metrics": {
+                    "mae": 3.0671,
+                    "rmse": 3.828,
+                    "r2": 0.2854
+                }
+            },
+            "Run2_Comparative": {
+                "parameters": {
+                    "n_estimators": 200,
+                    "max_depth": 12,
+                    "random_state": 42
+                },
+                "metrics": {
+                    "mae": 2.9819,
+                    "rmse": 3.757,
+                    "r2": 0.3116
+                }
+            }
+        }
+    },
+    "data_drift_monitoring": {
+        "reference_records": 150,
+        "current_records": 150,
+        "features_monitored": [
+            "studytime",
+            "absences",
+            "failures",
+            "age",
+            "Medu",
+            "Fedu"
+        ],
+        "drifted_features_count": 3,
+        "dataset_drift_detected": true,
+        "feature_details": [
+            {
+                "feature": "Fedu",
+                "drift_detected": false,
+                "stat_test": null,
+                "score": 1.0
+            },
+            {
+                "feature": "Medu",
+                "drift_detected": false,
+                "stat_test": null,
+                "score": 1.0
+            },
+            {
+                "feature": "absences",
+                "drift_detected": true,
+                "stat_test": null,
+                "score": 6.527559891593063e-28
+            },
+            {
+                "feature": "age",
+                "drift_detected": false,
+                "stat_test": null,
+                "score": 1.0
+            },
+            {
+                "feature": "failures",
+                "drift_detected": true,
+                "stat_test": null,
+                "score": 0.0
+            },
+            {
+                "feature": "studytime",
+                "drift_detected": true,
+                "stat_test": null,
+                "score": 0.0
+            }
+        ]
+    },
+    "artifacts": {
+        "model_pipeline": "/Users/shivpardeshi/Downloads/MLOps Student Project/models/student_performance_model.joblib",
+        "actual_vs_predicted_plot": "/Users/shivpardeshi/Downloads/MLOps Student Project/reports/actual_vs_predicted.png",
+        "evidently_html_report": "/Users/shivpardeshi/Downloads/MLOps Student Project/reports/data_drift_report.html",
+        "evidently_json_report": "/Users/shivpardeshi/Downloads/MLOps Student Project/reports/data_drift_report.json",
+        "feature_drift_summary_csv": "/Users/shivpardeshi/Downloads/MLOps Student Project/reports/feature_drift_summary.csv",
+        "prediction_drift_plot": "/Users/shivpardeshi/Downloads/MLOps Student Project/reports/prediction_drift_comparison.png"
+    }
+}

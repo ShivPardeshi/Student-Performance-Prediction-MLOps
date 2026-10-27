@@ -1,0 +1,16 @@
+# Machine Learning & Data Processing
+pandas>=2.2.0,<3.2.0
+numpy>=1.26.0,<3.0.0
+scikit-learn>=1.4.0,<2.0.0
+joblib>=1.3.0,<2.0.0
+
+# Experiment Tracking & MLOps Monitoring
+mlflow>=2.15.0,<4.0.0
+evidently>=0.4.0,<0.8.0
+
+# Visualization & Reporting
+matplotlib>=3.8.0,<4.0.0
+seaborn>=0.13.0,<1.0.0
+
+# Automated Testing
+pytest>=8.0.0,<10.0.0

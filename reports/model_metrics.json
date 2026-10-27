@@ -1,0 +1,47 @@
+{
+    "selected_model": "Tuned_Model_Run2",
+    "selected_parameters": {
+        "n_estimators": 200,
+        "max_depth": 12,
+        "random_state": 42
+    },
+    "metrics": {
+        "mae": 2.9819,
+        "rmse": 3.757,
+        "r2": 0.3116
+    },
+    "comparison": {
+        "Run1_Baseline": {
+            "parameters": {
+                "n_estimators": 100,
+                "max_depth": 8,
+                "random_state": 42
+            },
+            "metrics": {
+                "mae": 3.0671,
+                "rmse": 3.828,
+                "r2": 0.2854
+            }
+        },
+        "Run2_Comparative": {
+            "parameters": {
+                "n_estimators": 200,
+                "max_depth": 12,
+                "random_state": 42
+            },
+            "metrics": {
+                "mae": 2.9819,
+                "rmse": 3.757,
+                "r2": 0.3116
+            }
+        }
+    },
+    "test_size": 0.2,
+    "random_state": 42,
+    "input_features_count": 30,
+    "excluded_features": [
+        "G1",
+        "G2",
+        "G3"
+    ]
+}

@@ -1,0 +1,7 @@
+feature_name,drift_detected,stat_test_name,stat_test_score,threshold,ref_mean,curr_mean
+Fedu,False,kolmogorov-smirnov,1.0,0.05,2.5866666666666664,2.5866666666666664
+Medu,False,kolmogorov-smirnov,1.0,0.05,2.7666666666666666,2.7666666666666666
+absences,True,kolmogorov-smirnov,6.527559891593063e-28,0.05,4.933333333333334,9.933333333333334
+age,False,kolmogorov-smirnov,1.0,0.05,16.64666666666667,16.64666666666667
+failures,True,kolmogorov-smirnov,0.0,0.05,0.32666666666666666,1.3266666666666667
+studytime,True,kolmogorov-smirnov,0.0,0.05,1.9733333333333334,3.84

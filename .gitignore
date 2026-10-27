@@ -1,0 +1,32 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# MLflow local tracking
+mlruns/
+mlartifacts/
+.trash/
+
+# Operating System & IDE metadata
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dataset - keep folder with .gitkeep but exclude downloaded raw source
+# reference_data.csv and current_data.csv can be versioned or generated
+data/student-mat.csv
+data/student-mat.txt
+student-mat.csv
+student/
